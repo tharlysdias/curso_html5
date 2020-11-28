@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 8 HTML5</title>
+</head>
+
+<body>
+    <!-- Semânticas textuais inline -->
+    <a href="https://www.mozilla.com">
+        Mozilla
+    </a>
+
+    <p>Obama é presidente dos <abbr title="Estados Unidos da América">EUA</abbr></p>
+
+    <p>
+        Este artigo descreve vários <b>níveis de texto</b>. Ele explica a utilização do elemento em um documento
+        <b>HTML</b>.
+    </p>
+    <!-- Palavras-chave são exibidas com o estilo padrão do elemento <b>, provavelmente em negrito. -->
+
+    <p dir="ltr">Esta palavra arábica <bdi>ARABIC_PLACEHOLDER</bdi> é automaticamente voltada da direita</p>
+
+    <!-- Muda a direção do texto -->
+    <p>Este texto ficará da esquerda para a direita.</p>
+    <p><bdo dir="rtl">Este texto ficará da direita para a esquerda.</bdo></p>
+
+    <p>
+        Mozilla Foundation<br>
+        1981 Landings Drive<br>
+        Building K<br>
+        Mountain View, CA 94043-0801<br>
+        USA
+    </p>
+
+    <p>New Products</p>
+    <ul>
+        <li><data value="3967381398">Mini Ketchup</data></li>
+        <li><data value="3967381399">Jumbo Ketchup</data></li>
+        <li><data value="3967381400">Mega Jumbo Ketchup</data></li>
+    </ul>
+
+    <!-- Define "A Internet" -->
+    <p><dfn id="def-internet">A Internet</dfn> é um sistema global de redes interconectadas que usam o Internet Protocol
+        Suite (TCP/IP) para servir bilhões de usuários no mundo todo.
+    </p>
+
+    <p>O elemento &lt;mark&gt; é usado para <mark>destacar</mark> partes do texto</p>
+
+    <ruby>
+        漢 <rp>(</rp>
+        <rt>Kan</rt>
+        <rp>)</rp>
+        字 <rp>(</rp>
+        <rt>ji</rt>
+        <rp>)</rp>
+    </ruby>
+
+    <!-- Usar quando não existir outra tag semantica -->
+    <div>In block</div>
+    <p><span>Some text</span></p>
+
+    <p>The concert starts at <time>20:00</time>.</p>
+    <p>The concert took place on <time datetime="2001-05-15 19:00">May 15</time>.</p>
+
+    <p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+    <p>
+        https://this<wbr>.is<wbr>.a<wbr>.really<wbr>.long<wbr>.example<wbr>.com/With<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages<wbr>/deeper<wbr>/level<wbr>/pages</p>
+
+</body>
+
+</html>
