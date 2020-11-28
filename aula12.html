@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 12 HTML5</title>
+    <script type="text/javascript">
+        function incrementa() {
+            document.getElementById('nota').value += 10;
+        }
+
+        function decrementa() {
+            document.getElementById('nota').value -= 10;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Formulários -->
+    <!-- 
+        Metodos que conversam com servidor de aplicações
+        GET = Read (Ler informações do servidor)
+        POST = Create (Criar novos recursos no servidor)
+        PUT = Update (Atualizar as informações)
+        DELETE = Delete (Delete informações)
+    -->
+    <!-- Form que envia uma requisição GET -->
+    <form action="#" method="get">
+        <label for="GET-name">Name:</label>
+        <input id="GET-name" type="text" name="name">
+        <input type="submit" value="Save">
+    </form>
+
+    <!-- Simple form which will send a POST request -->
+    <form action="#" method="post">
+        <label for="POST-name">Name:</label>
+        <input id="POST-name" type="text" name="name">
+        <input type="submit" value="Save">
+    </form>
+
+    <!-- Form with fieldset, legend, and label -->
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Title</legend>
+            <input type="radio" name="radio" id="radio"> <label for="radio">Click me</label>
+        </fieldset>
+    </form>
+
+    <!-- Button -->
+    <form action="#" method="GET">
+        <button type="submit" name="button">Click me</button>
+
+        <input list="browsers" />
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <input type="radio" id="radio"> <label for="radio">Click me</label>
+        </fieldset>
+    </form>
+
+    <!-- O segundo valor estará selecionado inicialmente -->
+    <select name="select">
+        <option value="valor1">Valor 1</option>
+        <option value="valor2" selected>Valor 2</option>
+        <option value="valor3">Valor 3</option>
+    </select>
+
+    <label for="story">Tell us your story:</label>
+
+    <textarea id="story" name="story" rows="5" cols="33">
+        It was a dark and stormy night...
+    </textarea>
+
+    <br>
+    <br>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        0<input type="range" name="b" value="50" />100 +<input type="number" name="a" value="10" /> =
+        <output name="result"></output>
+    </form>
+
+    <progress value="70" max="100" id="nota">70 %</progress>
+    <button onclick="incrementa()">Incrementa</button>
+    <button onclick="decrementa()">Decrementa</button>
+
+
+    <br>
+    <!-- <h1 onmouseover="alert('Mouse over')">Mouse over</h1> -->
+
+    <br>
+    <h1 onmouseleave="decrementa()" onmouseover="incrementa()">Decrementa</h1>
+</body>
+
+</html>
