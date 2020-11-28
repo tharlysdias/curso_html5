@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 10 HTML5</title>
+    <noscript>
+        <!-- referência a arquivo externo -->
+        <a href="http://www.mozilla.com/">Link Externo</a>
+    </noscript>
+</head>
+
+<body>
+    <!-- Conteúdo integrado -->
+    <embed type="video/quicktime" src="movie.mov" width="640" height="480">
+    <script>
+        var iframe = window.getElementsByTagName("iframe")[0];
+        alert("Frame title: " + iframe.contentWindow.title);
+    </script>
+
+
+    <iframe src="page.html" width="300" height="300">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+
+    <picture>
+        <source srcset="mdn-logo-wide.png" media="(min-width: 600px)">
+        <img src="mdn-logo-narrow.png" alt="MDN">
+    </picture>
+
+    <video controls>
+        <source src="foo.ogg" type="video/ogg"> <!-- Escolhido pelo Firefox -->
+        <source src="foo.mov" type="video/quicktime"> <!-- Escolhido pelo Safari -->
+        Desculpa; seu navegador não é compatível com vídeo em HTML5.
+    </video>
+
+
+    <!-- Scripting -->
+    <canvas id="canvas" width="300" height="300">
+        Desculpe-me, seu navegador não suporta o elemento &lt;canvas&gt;.
+    </canvas>
+
+    <p>Rocks!</p>
+
+    <!-- HTML4 and (x)HTML -->
+    <script type="text/javascript" src="javascript.js"></script>
+
+    <!-- HTML5 -->
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
